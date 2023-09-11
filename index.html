@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Computer</title>
+    <style>
+      body {
+          font-family: Arial, sans-serif;
+          background-image: url('wallpaper1.jpg'); /* Hier wird das Hintergrundbild festgelegt */
+          background-size: cover;
+          margin: 0;
+          padding: 0;
+          background-attachment: fixed; /* Das Bild bleibt beim Scrollen fixiert */
+      }
+    
+  
+      .container {
+          max-width: 800px;
+          margin: 20px auto;
+          background-color: #ffffff;
+          padding: 20px;
+          border-radius: 10px;
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      }
+  
+      h1 {
+          text-align: center;
+          font-size: 36px;
+          color: #333;
+      }
+  
+      .hardware-list {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-between;
+      }
+  
+      .hardware-item {
+          flex: calc(33.33% - 20px);
+          margin: 10px;
+          padding: 10px;
+          border: 1px solid #ccc;
+          border-radius: 10px;
+          box-sizing: border-box;
+          text-align: center;
+          cursor: pointer;
+          transition: box-shadow 0.3s ease;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+      }
+  
+      .hardware-item:hover {
+          box-shadow: 0 0 10px rgba(0, 24, 209, 0.575);
+      }
+  
+      .hardware-image {
+          max-width: 60%; /* Ändere die maximale Breite des Mainboard-Bildes auf 60% */
+          border-radius: 10px;
+      }
+  
+      .hardware-description {
+          font-size: 16px;
+      }
+  </style>
+  
+  
+</head>
+<body>
+    <div class="container">
+        <h1>Computer</h1>
+        <div class="hardware-list">
+            <div class="hardware-item" onclick="window.location.href='mainboard.html';">
+                <img class="hardware-image" src="mainboard.png" alt="Bild von Mainboard">
+                <p class="hardware-description">Mainboard</p>
+            </div>
+
+            <div class="hardware-item" onclick="window.location.href='grafikkarte.html';">
+                <img class="hardware-image" src="grafikkarte.png" alt="Bild von Grafikkarte">
+                <p class="hardware-description">Grafikkarte</p>
+            </div>
+
+            <div class="hardware-item" onclick="window.location.href='cpu.html';">
+                <img class="hardware-image" src="cpu.png" alt="Bild von CPU">
+                <p class="hardware-description">CPU</p>
+            </div>
+
+            <div class="hardware-item" onclick="window.location.href='festplatten.html';">
+                <img class="hardware-image" src="festplatten.png" alt="Bild von Festplatten">
+                <p class="hardware-description">Festplatten</p>
+            </div>
+
+            <div class="hardware-item" onclick="window.location.href='netzteil.html';">
+                <img class="hardware-image" src="netzteil.png" alt="Bild von Netzteil">
+                <p class="hardware-description">Netzteil</p>
+            </div>
+
+            <div class="hardware-item" onclick="window.location.href='ram.html';">
+                <img class="hardware-image" src="ram.png" alt="Bild von RAM">
+                <p class="hardware-description">RAM</p>
+            </div>
+
+            <div class="hardware-item" onclick="window.location.href='schnittstellen.html';">
+              <img class="hardware-image" src="schnittstellen.png" alt="Bild von Schnittstellen">
+              <p class="hardware-description">Schnittstellen</p>
+        </div>
+
+        <div class="hardware-item" onclick="window.location.href='peripheriegeräte.html';">
+          <img class="hardware-image" src="peripheriegeräte.png" alt="Bild von Peripheriegeräte">
+          <p class="hardware-description">Peripheriegeräte</p>
+        </div>
+
+          <div class="hardware-item" onclick="window.location.href='bus-system.html';">
+            <img class="hardware-image" src="bus-system.png" alt="Bild von BUS System">
+            <p class="hardware-description">BUS System</p>
+    </div>
+</body>
+</html>
